@@ -1,6 +1,6 @@
 {
     "name": "laurent22/kache",
-    "description": "Simple cache system with support for multiple dricers.",
+    "description": "Simple cache system with support for multiple drivers.",
     "license": "MIT",
     "authors": [
         {
