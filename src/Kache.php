@@ -50,15 +50,15 @@ class Kache {
 	}
 	
 	public function getOrRun($key, $func, $timeout = null) {
-		$o = __c()->get($key);
+		$o = Kache::instance()->get($key);
 		if ($o !== null) return $o;
 		$o = $func();
-		__c()->set($key, $o, $timeout);
+		Kache::instance()->set($key, $o, $timeout);
 		return $o;
 	}
 
 }
 
-function __c() {
+function k() {
 	return Kache::instance();
 }

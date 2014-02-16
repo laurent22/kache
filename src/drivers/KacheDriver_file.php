@@ -72,4 +72,8 @@ class KacheDriver_file {
 		@unlink($this->filePath($key));
 	}
 
+	public function clear() {
+		@unlink($this->cacheFolder_);
+	}
+
 }
